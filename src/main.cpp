@@ -4,6 +4,7 @@
 #include <iostream>
 #include <map>
 #include <unordered_map>
+#include "compressed_array.h"
 
 #include "allocator.h"
 using str_allocator = tracked_allocator<char>;
@@ -56,6 +57,12 @@ int main()
 		std::cout << "std::unordered_map - " << memory_in_bytes << " bytes\n";
 	}
 
+	// compressed_array
+	{
+		compressed_array str_array(strs);
+		std::cout << "compressed_array - " << str_array.memory_footprint() << " bytes\n";
+	}
 
+	system("pause");
 	return 0;
 }

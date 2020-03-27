@@ -23,5 +23,8 @@
     <ClInclude Include="src\allocator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\compressed_array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
