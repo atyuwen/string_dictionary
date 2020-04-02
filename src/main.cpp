@@ -37,8 +37,11 @@ void copy_data(const std::vector<std::string>& data, TMap& map)
 int main()
 {
 	std::vector<std::string> strs;
+#if _DEBUG
+	read_data("data/data_small.txt", strs);
+#else
 	read_data("data/data.txt", strs);
-
+#endif
 	// std::map
 	{
 		size_t memory_in_bytes = 0;
@@ -60,6 +63,20 @@ int main()
 	// compressed_array
 	{
 		compressed_array str_array(strs);
+
+		// test
+		for (const std::string& str : strs)
+		{
+			int32_t id = str_array.lookup(str);
+			std::string nstr = str_array.access(id);
+			if (id == -1 || str != nstr)
+			{
+				assert(0);
+				std::cout << "compressed_array - test failed. \n";
+				break;
+			}
+		}
+
 		std::cout << "compressed_array - " << str_array.memory_footprint() << " bytes\n";
 	}
 
