@@ -2,14 +2,14 @@
 #include <string>
 #include <fstream>
 #include <iostream>
-#include <map>
-#include <unordered_map>
+#include <set>
+#include <unordered_set>
 #include "compressed_array.h"
 
 #include "allocator.h"
 using str_allocator = tracked_allocator<char>;
 using tstring = std::basic_string<char, std::char_traits<char>, str_allocator>;
-using map_allocator = tracked_allocator<std::pair<tstring, int>>;
+using set_allocator = tracked_allocator<tstring>;
 
 void read_data(const std::string& file, std::vector<std::string>& data)
 {
@@ -21,18 +21,17 @@ void read_data(const std::string& file, std::vector<std::string>& data)
 	}
 }
 
-template<typename TMap>
-void copy_data(const std::vector<std::string>& data, TMap& map)
+template<typename TSet>
+void built_set(const std::vector<std::string>& data, TSet& set)
 {
-	str_allocator allocator = map.get_allocator();
-	int index = 0;
+	str_allocator allocator = set.get_allocator();
 	for (const auto& it : data)
 	{
 		tstring str(it.begin(), it.end(), allocator);
-		map.emplace(std::move(str), index);
-		index += 1;
+		set.emplace(std::move(str));
 	}
 }
+
 
 int main()
 {
@@ -42,22 +41,22 @@ int main()
 #else
 	read_data("data/data.txt", strs);
 #endif
-	// std::map
+	// std::set
 	{
 		size_t memory_in_bytes = 0;
-		map_allocator allocator(memory_in_bytes);
-		std::map<tstring, int, std::less<tstring>, map_allocator> map(allocator);
-		copy_data(strs, map);
-		std::cout << "std::map - " << memory_in_bytes << " bytes\n";
+		set_allocator allocator(memory_in_bytes);
+		std::set<tstring, std::less<tstring>, set_allocator> set(allocator);
+		built_set(strs, set);
+		std::cout << "std::set - " << memory_in_bytes << " bytes\n";
 	}
 
-	// std::unordered_map
+	// std::unordered_set
 	{
 		size_t memory_in_bytes = 0;
-		map_allocator allocator(memory_in_bytes);
-		std::unordered_map<tstring, int, std::hash<tstring>, std::equal_to<tstring>, map_allocator> map(allocator);
-		copy_data(strs, map);
-		std::cout << "std::unordered_map - " << memory_in_bytes << " bytes\n";
+		set_allocator allocator(memory_in_bytes);
+		std::unordered_set<tstring, std::hash<tstring>, std::equal_to<tstring>, set_allocator> set(allocator);
+		built_set(strs, set);
+		std::cout << "std::unordered_set- " << memory_in_bytes << " bytes\n";
 	}
 
 	// compressed_array
