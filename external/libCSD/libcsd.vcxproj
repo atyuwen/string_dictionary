@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{0F01B1CF-6C97-4BB9-BE31-6A8F07A94129}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)libcds\includes;$(ProjectDir)libcds\src\utils;$(ProjectDir)libcds\src\static\sequence;$(ProjectDir)libcds\src\static\bitsequence;$(ProjectDir)libcds\src\static\mapper;$(ProjectDir)libcds\src\static\coders;$(ProjectDir)libcds\src\static\suffixtree;$(ProjectDir)libcds\src\static\permutation;$(ProjectDir)libcds\src\static\textindex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)libcds\includes;$(ProjectDir)libcds\src\utils;$(ProjectDir)libcds\src\static\sequence;$(ProjectDir)libcds\src\static\bitsequence;$(ProjectDir)libcds\src\static\mapper;$(ProjectDir)libcds\src\static\coders;$(ProjectDir)libcds\src\static\suffixtree;$(ProjectDir)libcds\src\static\permutation;$(ProjectDir)libcds\src\static\textindex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Build.cpp" />
+    <ClCompile Include="fmindex\SSA.cpp" />
+    <ClCompile Include="fmindex\SuffixArray.cpp" />
+    <ClCompile Include="hash\Hash1.cpp" />
+    <ClCompile Include="hash\HashBBdh.cpp" />
+    <ClCompile Include="hash\HashBdh.cpp" />
+    <ClCompile Include="hash\HashDAC.cpp" />
+    <ClCompile Include="hash\Hashdh.cpp" />
+    <ClCompile Include="huffman\huff1.cpp" />
+    <ClCompile Include="huffman\Huffman.cpp" />
+    <ClCompile Include="hutucker\HuTucker.cpp" />
+    <ClCompile Include="libcds\src\static\bitsequence (copia)\BitSequenceBuilderRRR.cpp" />
+    <ClCompile Include="libcds\src\static\bitsequence (copia)\BitSequenceRRR.cpp" />
+    <ClCompile Include="libcds\src\static\bitsequence (copia)\BitSequenceSDArray.cpp" />
+    <ClCompile Include="libcds\src\static\bitsequence\BitSequence.cpp" />
+    <ClCompile Include="libcds\src\static\bitsequence\BitSequence375.cpp" />
+    <ClCompile Include="libcds\src\static\bitsequence\BitSequenceBuilder375.cpp" />
+    <ClCompile Include="libcds\src\static\bitsequence\BitSequenceBuilderDArray.cpp" />
+    <ClCompile Include="libcds\src\static\bitsequence\BitSequenceBuilderRG.cpp" />
+    <ClCompile Include="libcds\src\static\bitsequence\BitSequenceBuilderSDArray.cpp" />
+    <ClCompile Include="libcds\src\static\bitsequence\BitSequenceDArray.cpp" />
+    <ClCompile Include="libcds\src\static\bitsequence\BitSequenceRG.cpp" />
+    <ClCompile Include="libcds\src\static\bitsequence\sdarraySadakane.cpp" />
+    <ClCompile Include="libcds\src\static\bitsequence\TableOffsetRRR.cpp" />
+    <ClCompile Include="libcds\src\static\coders\huff.cpp" />
+    <ClCompile Include="libcds\src\static\coders\HuffmanCoder.cpp" />
+    <ClCompile Include="libcds\src\static\mapper\Mapper.cpp" />
+    <ClCompile Include="libcds\src\static\mapper\MapperCont.cpp" />
+    <ClCompile Include="libcds\src\static\mapper\MapperNone.cpp" />
+    <ClCompile Include="libcds\src\static\permutation\perm.cpp" />
+    <ClCompile Include="libcds\src\static\permutation\Permutation.cpp" />
+    <ClCompile Include="libcds\src\static\permutation\PermutationBuilderMRRR.cpp" />
+    <ClCompile Include="libcds\src\static\permutation\PermutationMRRR.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\BitmapsSequence.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\Sequence.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\SequenceAlphPart.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\SequenceBuilderAlphPart.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\SequenceBuilderGMR.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\SequenceBuilderGMRChunk.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\SequenceBuilderStr.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\SequenceBuilderWaveletTree.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\SequenceBuilderWaveletTreeNoptrs.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\SequenceGMR.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\SequenceGMRChunk.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\WaveletTree.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\WaveletTreeNoptrs.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\wt_coder.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\wt_coder_binary.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\wt_coder_huff.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\wt_node.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\wt_node_internal.cpp" />
+    <ClCompile Include="libcds\src\static\sequence\wt_node_leaf.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\factorization.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\factorization_var.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\LCP.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\LCP_DAC.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\LCP_DAC_VAR.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\LCP_FMN.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\LCP_naive.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\LCP_PhiSpare.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\LCP_PT.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\LCP_Sad.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\NPR.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\NPR_CN.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\NPR_FMN.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\NSV.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\PSV.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\RMQ_succinct.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\RMQ_succinct_lcp.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\SuffixTree.cpp" />
+    <ClCompile Include="libcds\src\static\suffixtree\SuffixTreeY.cpp" />
+    <ClCompile Include="libcds\src\static\textindex\comparray4.cpp" />
+    <ClCompile Include="libcds\src\static\textindex\qsufsort.cpp" />
+    <ClCompile Include="libcds\src\static\textindex\suftest3.test.cpp" />
+    <ClCompile Include="libcds\src\static\textindex\TextIndex.cpp" />
+    <ClCompile Include="libcds\src\static\textindex\TextIndexCSA.cpp" />
+    <ClCompile Include="libcds\src\utils\Array.cpp" />
+    <ClCompile Include="libcds\src\utils\BitString.cpp" />
+    <ClCompile Include="libcds\src\utils\cppUtils.cpp" />
+    <ClCompile Include="repair\coder\arrayg.cpp" />
+    <ClCompile Include="repair\coder\basics.cpp" />
+    <ClCompile Include="repair\coder\CRePair.cpp" />
+    <ClCompile Include="repair\coder\dictionary.cpp" />
+    <ClCompile Include="repair\coder\hash.cpp" />
+    <ClCompile Include="repair\coder\heap.cpp" />
+    <ClCompile Include="repair\coder\IRePair.cpp" />
+    <ClCompile Include="repair\coder\records.cpp" />
+    <ClCompile Include="repair\RePair.cpp" />
+    <ClCompile Include="StringDictionary.cpp" />
+    <ClCompile Include="StringDictionaryFMINDEX.cpp" />
+    <ClCompile Include="StringDictionaryHASHHF.cpp" />
+    <ClCompile Include="StringDictionaryHASHRPDAC.cpp" />
+    <ClCompile Include="StringDictionaryHASHRPF.cpp" />
+    <ClCompile Include="StringDictionaryHASHUFFDAC.cpp" />
+    <ClCompile Include="StringDictionaryHHTFC.cpp" />
+    <ClCompile Include="StringDictionaryHTFC.cpp" />
+    <ClCompile Include="StringDictionaryPFC.cpp" />
+    <ClCompile Include="StringDictionaryRPDAC.cpp" />
+    <ClCompile Include="StringDictionaryRPFC.cpp" />
+    <ClCompile Include="StringDictionaryRPHTFC.cpp" />
+    <ClCompile Include="StringDictionaryXBW.cpp" />
+    <ClCompile Include="utils\coder\BinaryNode.cpp" />
+    <ClCompile Include="utils\coder\Coder.cpp" />
+    <ClCompile Include="utils\coder\DecodingTable.cpp" />
+    <ClCompile Include="utils\coder\DecodingTableBuilder.cpp" />
+    <ClCompile Include="utils\coder\DecodingTree.cpp" />
+    <ClCompile Include="utils\coder\StatCoder.cpp" />
+    <ClCompile Include="utils\DAC_BVLS.cpp" />
+    <ClCompile Include="utils\DAC_VLS.cpp" />
+    <ClCompile Include="utils\LogSequence.cpp" />
+    <ClCompile Include="utils\VByte.cpp" />
+    <ClCompile Include="xbw\TrieNode.cpp" />
+    <ClCompile Include="xbw\XBW.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fmindex\SSA.h" />
+    <ClInclude Include="fmindex\SuffixArray.h" />
+    <ClInclude Include="hash\Hash.h" />
+    <ClInclude Include="hash\HashBBdh.h" />
+    <ClInclude Include="hash\HashBdh.h" />
+    <ClInclude Include="hash\HashDAC.h" />
+    <ClInclude Include="hash\Hashdh.h" />
+    <ClInclude Include="hash\HashUtils.h" />
+    <ClInclude Include="huffman\huff.h" />
+    <ClInclude Include="huffman\Huffman.h" />
+    <ClInclude Include="hutucker\HuTucker.h" />
+    <ClInclude Include="iterators\IteratorDictID.h" />
+    <ClInclude Include="iterators\IteratorDictIDContiguous.h" />
+    <ClInclude Include="iterators\IteratorDictIDDuplicates.h" />
+    <ClInclude Include="iterators\IteratorDictIDNoContiguous.h" />
+    <ClInclude Include="iterators\IteratorDictIDXBW.h" />
+    <ClInclude Include="iterators\IteratorDictIDXBWDuplicates.h" />
+    <ClInclude Include="iterators\IteratorDictString.h" />
+    <ClInclude Include="iterators\IteratorDictStringFMINDEX.h" />
+    <ClInclude Include="iterators\IteratorDictStringFMINDEXDuplicates.h" />
+    <ClInclude Include="iterators\IteratorDictStringHHTFC.h" />
+    <ClInclude Include="iterators\IteratorDictStringHTFC.h" />
+    <ClInclude Include="iterators\IteratorDictStringPFC.h" />
+    <ClInclude Include="iterators\IteratorDictStringPlain.h" />
+    <ClInclude Include="iterators\IteratorDictStringRPDAC.h" />
+    <ClInclude Include="iterators\IteratorDictStringRPFC.h" />
+    <ClInclude Include="iterators\IteratorDictStringRPHTFC.h" />
+    <ClInclude Include="iterators\IteratorDictStringVector.h" />
+    <ClInclude Include="iterators\IteratorDictStringXBW.h" />
+    <ClInclude Include="iterators\IteratorDictStringXBWDuplicates.h" />
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequence.h" />
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceBuilder.h" />
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceBuilderDArray.h" />
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceBuilderRG.h" />
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceBuilderRRR.h" />
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceBuilderSDArray.h" />
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceDArray.h" />
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceRG.h" />
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceRRR.h" />
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceSDArray.h" />
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\sdarraySadakane.h" />
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\TableOffsetRRR.h" />
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequence.h" />
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequence375.h" />
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceBuilder.h" />
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceBuilder375.h" />
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceBuilderDArray.h" />
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceBuilderRG.h" />
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceBuilderRRR.h" />
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceBuilderSDArray.h" />
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceDArray.h" />
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceRG.h" />
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceRRR.h" />
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceSDArray.h" />
+    <ClInclude Include="libcds\src\static\bitsequence\sdarraySadakane.h" />
+    <ClInclude Include="libcds\src\static\bitsequence\TableOffsetRRR.h" />
+    <ClInclude Include="libcds\src\static\coders\Coder.h" />
+    <ClInclude Include="libcds\src\static\coders\huff.h" />
+    <ClInclude Include="libcds\src\static\coders\HuffmanCoder.h" />
+    <ClInclude Include="libcds\src\static\mapper\Mapper.h" />
+    <ClInclude Include="libcds\src\static\mapper\MapperCont.h" />
+    <ClInclude Include="libcds\src\static\mapper\MapperNone.h" />
+    <ClInclude Include="libcds\src\static\permutation\perm.h" />
+    <ClInclude Include="libcds\src\static\permutation\Permutation.h" />
+    <ClInclude Include="libcds\src\static\permutation\PermutationBuilder.h" />
+    <ClInclude Include="libcds\src\static\permutation\PermutationBuilderMRRR.h" />
+    <ClInclude Include="libcds\src\static\permutation\PermutationMRRR.h" />
+    <ClInclude Include="libcds\src\static\sequence\BitmapsSequence.h" />
+    <ClInclude Include="libcds\src\static\sequence\Sequence.h" />
+    <ClInclude Include="libcds\src\static\sequence\SequenceAlphPart.h" />
+    <ClInclude Include="libcds\src\static\sequence\SequenceBuilder.h" />
+    <ClInclude Include="libcds\src\static\sequence\SequenceBuilderAlphPart.h" />
+    <ClInclude Include="libcds\src\static\sequence\SequenceBuilderGMR.h" />
+    <ClInclude Include="libcds\src\static\sequence\SequenceBuilderGMRChunk.h" />
+    <ClInclude Include="libcds\src\static\sequence\SequenceBuilderStr.h" />
+    <ClInclude Include="libcds\src\static\sequence\SequenceBuilderWaveletTree.h" />
+    <ClInclude Include="libcds\src\static\sequence\SequenceBuilderWaveletTreeNoptrs.h" />
+    <ClInclude Include="libcds\src\static\sequence\SequenceGMR.h" />
+    <ClInclude Include="libcds\src\static\sequence\SequenceGMRChunk.h" />
+    <ClInclude Include="libcds\src\static\sequence\WaveletTree.h" />
+    <ClInclude Include="libcds\src\static\sequence\WaveletTreeNoptrs.h" />
+    <ClInclude Include="libcds\src\static\sequence\wt_coder.h" />
+    <ClInclude Include="libcds\src\static\sequence\wt_coder_binary.h" />
+    <ClInclude Include="libcds\src\static\sequence\wt_coder_huff.h" />
+    <ClInclude Include="libcds\src\static\sequence\wt_node.h" />
+    <ClInclude Include="libcds\src\static\sequence\wt_node_internal.h" />
+    <ClInclude Include="libcds\src\static\sequence\wt_node_leaf.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\factorization.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\factorization_var.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\LCP.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\LCP_DAC.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\LCP_DAC_VAR.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\LCP_FMN.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\LCP_naive.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\LCP_PhiSpare.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\LCP_PT.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\LCP_Sad.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\NPR.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\NPR_CN.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\NPR_FMN.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\NSV.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\PSV.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\RMQ_succinct.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\RMQ_succinct_lcp.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\SuffixTree.h" />
+    <ClInclude Include="libcds\src\static\suffixtree\SuffixTreeY.h" />
+    <ClInclude Include="libcds\src\static\textindex\comparray4.h" />
+    <ClInclude Include="libcds\src\static\textindex\interface.h" />
+    <ClInclude Include="libcds\src\static\textindex\mmap.h" />
+    <ClInclude Include="libcds\src\static\textindex\TextIndex.h" />
+    <ClInclude Include="libcds\src\static\textindex\TextIndexCSA.h" />
+    <ClInclude Include="libcds\src\utils\Array.h" />
+    <ClInclude Include="libcds\src\utils\BitString.h" />
+    <ClInclude Include="libcds\src\utils\cppUtils.h" />
+    <ClInclude Include="libcds\src\utils\libcdsBasics.h" />
+    <ClInclude Include="libcds\src\utils\libcdsSDArray.h" />
+    <ClInclude Include="libcds\src\utils\libcdsTrees.h" />
+    <ClInclude Include="repair\coder\arrayg.h" />
+    <ClInclude Include="repair\coder\basics.h" />
+    <ClInclude Include="repair\coder\CRePair.h" />
+    <ClInclude Include="repair\coder\dictionary.h" />
+    <ClInclude Include="repair\coder\hash.h" />
+    <ClInclude Include="repair\coder\heap.h" />
+    <ClInclude Include="repair\coder\IRePair.h" />
+    <ClInclude Include="repair\coder\records.h" />
+    <ClInclude Include="repair\RePair.h" />
+    <ClInclude Include="StringDictionary.h" />
+    <ClInclude Include="StringDictionaryFMINDEX.h" />
+    <ClInclude Include="StringDictionaryHASHHF.h" />
+    <ClInclude Include="StringDictionaryHASHRPDAC.h" />
+    <ClInclude Include="StringDictionaryHASHRPF.h" />
+    <ClInclude Include="StringDictionaryHASHUFFDAC.h" />
+    <ClInclude Include="StringDictionaryHHTFC.h" />
+    <ClInclude Include="StringDictionaryHTFC.h" />
+    <ClInclude Include="StringDictionaryPFC.h" />
+    <ClInclude Include="StringDictionaryRPDAC.h" />
+    <ClInclude Include="StringDictionaryRPFC.h" />
+    <ClInclude Include="StringDictionaryRPHTFC.h" />
+    <ClInclude Include="StringDictionaryXBW.h" />
+    <ClInclude Include="utils\coder\BinaryNode.h" />
+    <ClInclude Include="utils\coder\Coder.h" />
+    <ClInclude Include="utils\coder\Codeword.h" />
+    <ClInclude Include="utils\coder\DecodingTable.h" />
+    <ClInclude Include="utils\coder\DecodingTableBuilder.h" />
+    <ClInclude Include="utils\coder\DecodingTree.h" />
+    <ClInclude Include="utils\coder\StatCoder.h" />
+    <ClInclude Include="utils\DAC_BVLS.h" />
+    <ClInclude Include="utils\DAC_VLS.h" />
+    <ClInclude Include="utils\LogSequence.h" />
+    <ClInclude Include="utils\Utils.h" />
+    <ClInclude Include="utils\VByte.h" />
+    <ClInclude Include="xbw\TrieNode.h" />
+    <ClInclude Include="xbw\XBW.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

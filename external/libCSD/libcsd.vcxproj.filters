@@ -1,0 +1,819 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Build.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringDictionary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringDictionaryFMINDEX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringDictionaryHASHHF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringDictionaryHASHRPDAC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringDictionaryHASHRPF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringDictionaryHASHUFFDAC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringDictionaryHHTFC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringDictionaryHTFC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringDictionaryPFC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringDictionaryRPDAC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringDictionaryRPFC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringDictionaryRPHTFC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringDictionaryXBW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fmindex\SSA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fmindex\SuffixArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hash\HashBBdh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hash\HashBdh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hash\HashDAC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hash\Hashdh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="huffman\Huffman.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hutucker\HuTucker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\bitsequence\BitSequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\bitsequence\BitSequence375.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\bitsequence\BitSequenceBuilder375.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\bitsequence\BitSequenceBuilderDArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\bitsequence\BitSequenceBuilderRG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\bitsequence\BitSequenceBuilderSDArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\bitsequence\BitSequenceDArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\bitsequence\BitSequenceRG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\bitsequence\sdarraySadakane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\bitsequence\TableOffsetRRR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\bitsequence (copia)\BitSequenceBuilderRRR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\bitsequence (copia)\BitSequenceRRR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\bitsequence (copia)\BitSequenceSDArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\coders\huff.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\coders\HuffmanCoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\mapper\Mapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\mapper\MapperCont.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\mapper\MapperNone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\permutation\perm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\permutation\Permutation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\permutation\PermutationBuilderMRRR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\permutation\PermutationMRRR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\BitmapsSequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\Sequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\SequenceAlphPart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\SequenceBuilderAlphPart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\SequenceBuilderGMR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\SequenceBuilderGMRChunk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\SequenceBuilderStr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\SequenceBuilderWaveletTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\SequenceBuilderWaveletTreeNoptrs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\SequenceGMR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\SequenceGMRChunk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\WaveletTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\WaveletTreeNoptrs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\wt_coder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\wt_coder_binary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\wt_coder_huff.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\wt_node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\wt_node_internal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\sequence\wt_node_leaf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\factorization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\factorization_var.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\LCP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\LCP_DAC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\LCP_DAC_VAR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\LCP_FMN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\LCP_naive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\LCP_PhiSpare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\LCP_PT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\LCP_Sad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\NPR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\NPR_CN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\NPR_FMN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\NSV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\PSV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\RMQ_succinct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\RMQ_succinct_lcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\SuffixTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\suffixtree\SuffixTreeY.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\textindex\comparray4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\textindex\qsufsort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\textindex\suftest3.test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\textindex\TextIndex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\static\textindex\TextIndexCSA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\utils\Array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\utils\BitString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libcds\src\utils\cppUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="repair\RePair.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="repair\coder\arrayg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="repair\coder\basics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="repair\coder\CRePair.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="repair\coder\dictionary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="repair\coder\hash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="repair\coder\heap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="repair\coder\IRePair.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="repair\coder\records.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\DAC_BVLS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\DAC_VLS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\LogSequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\VByte.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\coder\BinaryNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\coder\Coder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\coder\DecodingTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\coder\DecodingTableBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\coder\DecodingTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\coder\StatCoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xbw\TrieNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xbw\XBW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hash\Hash1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="huffman\huff1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StringDictionary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringDictionaryFMINDEX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringDictionaryHASHHF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringDictionaryHASHRPDAC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringDictionaryHASHRPF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringDictionaryHASHUFFDAC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringDictionaryHHTFC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringDictionaryHTFC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringDictionaryPFC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringDictionaryRPDAC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringDictionaryRPFC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringDictionaryRPHTFC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringDictionaryXBW.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fmindex\SSA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fmindex\SuffixArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hash\Hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hash\HashBBdh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hash\HashBdh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hash\HashDAC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hash\Hashdh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hash\HashUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="huffman\huff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="huffman\Huffman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hutucker\HuTucker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictIDContiguous.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictIDDuplicates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictIDNoContiguous.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictIDXBW.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictIDXBWDuplicates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictStringFMINDEX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictStringFMINDEXDuplicates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictStringHHTFC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictStringHTFC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictStringPFC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictStringPlain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictStringRPDAC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictStringRPFC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictStringRPHTFC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictStringVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictStringXBW.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterators\IteratorDictStringXBWDuplicates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequence375.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceBuilder375.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceBuilderDArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceBuilderRG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceBuilderRRR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceBuilderSDArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceDArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceRG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceRRR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence\BitSequenceSDArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence\sdarraySadakane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence\TableOffsetRRR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceBuilderDArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceBuilderRG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceBuilderRRR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceBuilderSDArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceDArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceRG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceRRR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\BitSequenceSDArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\sdarraySadakane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\bitsequence (copia)\TableOffsetRRR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\coders\Coder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\coders\huff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\coders\HuffmanCoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\mapper\Mapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\mapper\MapperCont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\mapper\MapperNone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\permutation\perm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\permutation\Permutation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\permutation\PermutationBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\permutation\PermutationBuilderMRRR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\permutation\PermutationMRRR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\BitmapsSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\Sequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\SequenceAlphPart.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\SequenceBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\SequenceBuilderAlphPart.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\SequenceBuilderGMR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\SequenceBuilderGMRChunk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\SequenceBuilderStr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\SequenceBuilderWaveletTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\SequenceBuilderWaveletTreeNoptrs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\SequenceGMR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\SequenceGMRChunk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\WaveletTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\WaveletTreeNoptrs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\wt_coder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\wt_coder_binary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\wt_coder_huff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\wt_node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\wt_node_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\sequence\wt_node_leaf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\factorization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\factorization_var.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\LCP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\LCP_DAC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\LCP_DAC_VAR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\LCP_FMN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\LCP_naive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\LCP_PhiSpare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\LCP_PT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\LCP_Sad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\NPR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\NPR_CN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\NPR_FMN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\NSV.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\PSV.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\RMQ_succinct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\RMQ_succinct_lcp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\SuffixTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\suffixtree\SuffixTreeY.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\textindex\comparray4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\textindex\interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\textindex\mmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\textindex\TextIndex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\static\textindex\TextIndexCSA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\utils\Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\utils\BitString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\utils\cppUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\utils\libcdsBasics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\utils\libcdsSDArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcds\src\utils\libcdsTrees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="repair\RePair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="repair\coder\arrayg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="repair\coder\basics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="repair\coder\CRePair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="repair\coder\dictionary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="repair\coder\hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="repair\coder\heap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="repair\coder\IRePair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="repair\coder\records.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\DAC_BVLS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\DAC_VLS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\LogSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\VByte.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\coder\BinaryNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\coder\Coder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\coder\Codeword.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\coder\DecodingTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\coder\DecodingTableBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\coder\DecodingTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\coder\StatCoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xbw\TrieNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xbw\XBW.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
