@@ -18,12 +18,18 @@
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\libcsd_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\allocator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\compressed_array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libcsd_test.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -5,6 +5,7 @@
 #include <set>
 #include <unordered_set>
 #include "compressed_array.h"
+#include "libcsd_test.h"
 
 #include "allocator.h"
 using str_allocator = tracked_allocator<char>;
@@ -78,6 +79,9 @@ int main()
 
 		std::cout << "compressed_array - " << str_array.memory_footprint() << " bytes\n";
 	}
+
+	// lib csd
+	test_libcsd(strs);
 
 	system("pause");
 	return 0;

@@ -19,11 +19,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\libcsd_test.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\allocator.h" />
     <ClInclude Include="src\compressed_array.h" />
+    <ClInclude Include="src\libcsd_test.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="external\libCSD\libcsd.vcxproj">
+      <Project>{0f01b1cf-6c97-4bb9-be31-6a8f07a94129}</Project>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -106,6 +113,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)external\libCSD;$(ProjectDir)external\libCSD\libcds\src\utils;$(ProjectDir)external\libCSD\libcds\src\static\sequence;$(ProjectDir)external\libCSD\libcds\src\static\bitsequence;$(ProjectDir)external\libCSD\libcds\src\static\mapper;$(ProjectDir)external\libCSD\libcds\src\static\coders;$(ProjectDir)external\libCSD\libcds\src\static\permutation;$(ProjectDir)external\libCSD\libcds\src\static\suffixtree;$(ProjectDir)external\libCSD\libcds\src\static\textindex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -136,6 +144,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)external\libCSD;$(ProjectDir)external\libCSD\libcds\src\utils;$(ProjectDir)external\libCSD\libcds\src\static\sequence;$(ProjectDir)external\libCSD\libcds\src\static\bitsequence;$(ProjectDir)external\libCSD\libcds\src\static\mapper;$(ProjectDir)external\libCSD\libcds\src\static\coders;$(ProjectDir)external\libCSD\libcds\src\static\permutation;$(ProjectDir)external\libCSD\libcds\src\static\suffixtree;$(ProjectDir)external\libCSD\libcds\src\static\textindex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
