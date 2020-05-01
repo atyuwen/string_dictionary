@@ -6,9 +6,9 @@
 #include <cstdint>
 #include <limits>
 #include <algorithm>
-#include <assert.h>
+#include <cassert>
 
-class compressed_array
+class string_set
 {
 	static constexpr uint32_t uint32_max = std::numeric_limits<uint32_t>::max();
 	static constexpr uint16_t uint16_max = std::numeric_limits<uint16_t>::max();
@@ -22,7 +22,7 @@ class compressed_array
 	};
 
 public:
-	compressed_array(const std::vector<std::string>& strs)
+	string_set(const std::vector<std::string>& strs, int )
 	{
 		std::vector<std::string> sorted_strs = strs;
 		std::sort(sorted_strs.begin(), sorted_strs.end());
@@ -30,7 +30,7 @@ public:
 		construct(sorted_strs);
 	}
 
-	~compressed_array() = default;
+	~string_set() = default;
 
 public:
 	[[nodiscard]] int32_t lookup(const std::string& str) const noexcept

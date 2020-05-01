@@ -26,10 +26,13 @@
     <ClInclude Include="src\allocator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\compressed_array.h">
+    <ClInclude Include="src\libcsd_test.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\libcsd_test.h">
+    <ClInclude Include="src\string_set_simple.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\string_set.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

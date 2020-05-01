@@ -27,6 +27,13 @@ void test_libcsd(const std::vector<std::string>& strs)
 		// delete it
 		std::cout << "CSD HASHHF - " << dict->getSize() << " bytes\n";
 	}
+	// HASHUFFDAC
+	{
+		IteratorDictStringPlain* it = new IteratorDictStringPlain((uchar*)(&chars[0]), chars.size());
+		std::unique_ptr<StringDictionary> dict{ new StringDictionaryHASHUFFDAC(it, chars.size(), 10) };
+		// delete it
+		std::cout << "CSD HASHUFFDAC - " << dict->getSize() << " bytes\n";
+	}
 
 	// PFC
 	{

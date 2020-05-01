@@ -4,7 +4,9 @@
 #include <iostream>
 #include <set>
 #include <unordered_set>
-#include "compressed_array.h"
+#include "string_set_simple.h"
+#include "string_set.h"
+
 #include "libcsd_test.h"
 
 #include "allocator.h"
@@ -33,7 +35,6 @@ void built_set(const std::vector<std::string>& data, TSet& set)
 	}
 }
 
-
 int main()
 {
 	std::vector<std::string> strs;
@@ -60,27 +61,47 @@ int main()
 		std::cout << "std::unordered_set- " << memory_in_bytes << " bytes\n";
 	}
 
-	// compressed_array
+	// string_set_simple
 	{
-		compressed_array str_array(strs);
+		string_set_simple str_set(strs);
 
 		// test
 		for (const std::string& str : strs)
 		{
-			int32_t id = str_array.lookup(str);
-			std::string nstr = str_array.access(id);
+			int32_t id = str_set.lookup(str);
+			std::string nstr = str_set.access(id);
 			if (id == -1 || str != nstr)
 			{
 				assert(0);
-				std::cout << "compressed_array - test failed. \n";
+				std::cout << "string_set_simple - test failed. \n";
 				break;
 			}
 		}
 
-		std::cout << "compressed_array - " << str_array.memory_footprint() << " bytes\n";
+		std::cout << "string_set_simple - " << str_set.memory_footprint() << " bytes\n";
 	}
 
-	// lib csd
+	// string_set_simple
+	{
+		string_set str_set(strs);
+
+		// test
+		for (const std::string& str : strs)
+		{
+			int32_t id = str_set.lookup(str);
+			std::string nstr = str_set.access(id);
+			if (id == -1 || str != nstr)
+			{
+				assert(0);
+				std::cout << "string_set - test failed. \n";
+				break;
+			}
+		}
+
+		std::cout << "string_set - " << str_set.memory_footprint() << " bytes\n";
+	}
+
+	// lib CSD
 	test_libcsd(strs);
 
 	system("pause");

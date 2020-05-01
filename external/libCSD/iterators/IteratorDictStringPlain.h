@@ -90,12 +90,12 @@ class IteratorDictStringPlain : public IteratorDictString
 		/** Generic destructor. */
 		~IteratorDictStringPlain() 
 		{
-			delete [] arr; 
+			//delete [] arr; 
 		}
 
 	protected:
 		size_t pos;	// Pointer to the current position in the scanning
-	    	uchar *arr;	// The array of strings
+		uchar *arr;	// The array of strings
 };
 
 #endif  

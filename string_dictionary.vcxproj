@@ -24,7 +24,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\allocator.h" />
-    <ClInclude Include="src\compressed_array.h" />
+    <ClInclude Include="src\string_set.h" />
+    <ClInclude Include="src\string_set_simple.h" />
     <ClInclude Include="src\libcsd_test.h" />
   </ItemGroup>
   <ItemGroup>
